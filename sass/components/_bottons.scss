@@ -1,0 +1,38 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 35px;
+    font-size: 21px;
+    font-weight: 400;
+    color: white;
+    padding: 12px;
+    border-radius: 40px;
+    background: linear-gradient(
+    170deg,
+    $primaire-color,
+    $secendry--color);
+    box-shadow: 4px 4px 2px lightgrey;
+    cursor: pointer;
+
+        .btn p {
+        font-size: 15px;
+        }
+    &:hover{
+    background: linear-gradient(
+    180deg,
+    rgba(255, 121, 218, 0.8) 0%,
+    rgba(214, 108, 219, 0.8) 39%,
+    rgba(171, 94, 220, 0.8) 85%,
+    rgba(155, 89, 220, 0.8) 100%
+    );
+    box-shadow: 8px 8px 2px rgba(255, 121, 218, 0.8);
+    transform:translate( 5px, 5px);
+    transition: 0.5s;
+
+}
+}
+
+
+

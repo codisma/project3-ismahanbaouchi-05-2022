@@ -1,0 +1,25 @@
+
+
+// flex centering 
+@mixin centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin heart-bit {
+    background: rgb(255,121,218);
+    background: linear-gradient(90deg, rgba(255,121,218,1) 42%, rgba(147,86,220,1) 71%);
+    font-size: large;
+    transform: scale(2);
+    -webkit-background-clip: text;
+    transition: 1s;
+    
+}
+
+@mixin heart{
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}

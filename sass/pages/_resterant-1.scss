@@ -1,0 +1,224 @@
+.resto-image{
+    img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    }
+}
+.resto-name {
+    border-top-left-radius: 40px 40px;
+    border-top-right-radius: 40px 40px;
+    transform: translateY(-80px);
+    margin-bottom: -80px;
+    padding: 5px 5vw;
+    background-color: #f6f6f6;
+    font-family: shrikhand, cursive;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    h1 {
+        font-size: 30px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .icone-heart {
+        display: inline-block;
+        height: 2em;
+        line-height: 2em;
+        width: 2.5em;
+        font-size: xx-large;
+        bottom: 10px;
+        font-weight: 400;
+        cursor: pointer;
+        top: 15px;
+        position: relative;
+
+        .fa-heart-x1 {
+            line-height: inherit;
+            @include heart;
+        }
+        .fa-heart-x2 {
+            @include heart;
+            color: transparent;
+            transition: all 350ms;
+            padding: 0px;
+            line-height: inherit;
+            &:hover {
+                @include heart-bit;
+            }
+        }
+    }
+}
+
+.resto-menu {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .entrées-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 25%;
+        width: 100%;
+        .entrées p {
+            font-weight: 300;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 54px;
+            height: 3px;
+            background-color: $tertiaire-color;
+            margin-top: 18px;
+        }
+    }
+        .list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            animation-name: appear;
+            animation-duration: 1000ms;
+            animation-fill-mode: backwards;
+            margin:auto;
+
+            .list-1 {
+                background-color: white;
+                box-shadow: 2px 2px 2px lightgrey;
+                border-radius: 20px 20px;
+                height: fit-content;
+                margin: 11px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                transition: all 2000ms;
+                cursor: pointer;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 97%;
+
+                .caption {
+                    display: flex;
+                    flex: 100%;
+                    white-space: nowrap;
+                    flex-direction: column;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    transition: all 700ms;
+
+                    h3 {
+                        margin: 2px;
+                        margin-left: 13px;
+                        margin-top: 7px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        padding: 4px;
+                    }
+                }
+                .discription-pris {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    p {
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        font-weight: 300;
+                        margin: 2px;
+                        margin-left: 16px;
+                    }
+                    .pris p {
+                        font-weight: bold;
+                        margin-top: 2px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+                .icone-check {
+                    flex: 0%;
+                    color: #f6f6f6;
+                    background-color: #99e2d0;
+                    font-size: xx-large;
+                    text-align: center;
+                    height: 2.1em;
+                    line-height: 2.1em;
+                    white-space: nowrap;
+                    border-top-right-radius: 20px 20px;
+                    border-bottom-right-radius: 20px 20px;
+                    transform: translateX(100px);
+                    cursor: pointer;
+                    transition: all 700ms;
+                }
+                &:hover >.icone-check {
+                    flex: 25%;
+                    transform: translateX(0px);
+                    background-color: #99e2d0;
+                    cursor: pointer;
+                    color: #f6f6f6; 
+                    
+                    i{
+                        transform: rotate(180deg);
+                        animation: rotate 0.9s both;
+                    }
+                }
+            }
+
+        }
+    
+    .plats-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 25%;
+        width: 100%;
+        
+        .plats p {
+            font-weight: 300;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 3px;
+            background-color: $tertiaire-color;
+            margin-top: 20px;
+        }
+    }
+    .resto-menu .Desserts-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        height: 25%;
+
+        .Desserts p {
+            font-weight: 300;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 54px;
+            height: 3px;
+            background-color: $tertiaire-color;
+            margin-top: 20px;
+        }
+
+    }
+}
+.explore-1 {
+    @include centering;
+    p{
+        font-size: 21px;
+        padding: 11px;
+    }
+}

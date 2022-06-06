@@ -1,0 +1,58 @@
+.footer-section {
+    background-color: black;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+        color: white;
+        font-family: "Shrikhand", cursive;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .footer-list {
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 30%;
+        height: 120px;
+        .proposer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                margin-left: 6px;
+                font-size: 15px;
+            }
+        }
+        .partenaire {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                width: 87%;
+                font-size: 15px;
+            }
+        }
+        .contact {
+            font-size: 15px;
+            a{
+                color: white
+            }
+        }
+    }
+}
+@media (min-width: 767px) {
+.footer-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section .footer-list {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+
+}
+
+}

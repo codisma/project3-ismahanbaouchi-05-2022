@@ -1,0 +1,59 @@
+@media (min-width: 767px) {
+    .resto-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 94%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .resto-menu .entrées-menu {
+        flex-wrap: wrap;
+        width: 50%
+    }
+    .entrées-list .list-1  {
+        width: 80%;
+    }
+    .resto-menu .plats-menu {
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    .resto-menu .Desserts-menu {
+        margin-left: 250px;
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+    .resto-menu {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 94%;
+    margin-left: 30px;
+    margin-right: 30px;
+    }
+    .resto-menu .entrées-menu {
+        flex-wrap: nowrap;
+        width: 33%;
+    }
+    .resto-menu .plats-menu {
+        flex-wrap: nowrap;
+        width: 33%;
+    }
+    .resto-menu .Desserts-menu {
+        margin: 0px;
+        flex-wrap: nowrap;
+        width: 33%;;
+    }
+}

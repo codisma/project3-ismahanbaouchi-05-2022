@@ -1,0 +1,106 @@
+@media (min-width: 767px ){
+    .fonction {
+        height: 250px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+        .fonction .fonction-list  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:100%;
+    }
+    .fonction .fonction-list .fonct-1  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 45%;
+    }
+
+    .fonction .fonction-list .fonct-2  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 45%;
+    }
+
+    
+.footer-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section .footer-list {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:992px ){
+    .fonction {
+        height: 150px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+        .fonction .fonction-list  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .fonction .fonction-list .fonct-1 {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 30%;
+    }
+
+    .fonction .fonction-list .fonct-2  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:30%;
+    }
+    
+.restaurants-list .restaurants-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.restaurants-list .restaurants-cards .restaurants-1 {
+    width: 44%;
+    height: 300px;
+}
+
+.restaurants-list .restaurants-cards .restaurants-2 {
+    width: 44%;
+    height: 300px;
+
+}
+.restaurants-list .restaurants-cards .restaurants-3 {
+    width: 44%;
+    height: 300px;
+}
+.restaurants-list .restaurants-cards .restaurants-4 {
+    width: 44%;
+    height: 300px;
+}
+.restaurants-1 .row-cap {
+    margin-top: 10px; 
+}
+}
+
+
