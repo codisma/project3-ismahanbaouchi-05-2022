@@ -903,7 +903,7 @@ footer {
           justify-content: space-between;
 }
 
-.resto-name h1 {
+.resto-name h2 {
   font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
